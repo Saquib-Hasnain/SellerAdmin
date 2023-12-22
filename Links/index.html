@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <form onsubmit="saveOnBackend(event)">
+    <label for="expenseamount">Selling Price:</label>
+    <input type="number" name="expenseamount" id="expenseamount" required></input>
+    <label for="product">Product Name:</label>
+    <input type="text" name="product" id="product" required></input>
+    <label for="category">Choose a category:</label>
+    <select name="category" id="category">
+        <option value="electronic">Electronic</option>
+        <option value="food">Food</option>
+        <option value="skincare">Skincare</option>
+    </select>
+    <button>Add Product</button>
+    </form>
+    <h1>Products</h1>
+    <ul id="electronic"><b>Electronic</b></ul>
+    <ul id="food"><b>Food</b></ul>
+    <ul id="skincare"><b>Skincare</b></ul>
+    
+    <script src="index.js"></script>
+</body>
+</html>
